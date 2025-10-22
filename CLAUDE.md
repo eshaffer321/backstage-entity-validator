@@ -139,7 +139,7 @@ This file (`CLAUDE.md`) should **NOT** be submitted to upstream:
 - [ ] Add JSON output mode for CI integration
 
 ### Submitted to Upstream
-- None yet (improvement ready for submission)
+- [PR #107](https://github.com/RoadieHQ/backstage-entity-validator/pull/107) - Report all validation errors instead of stopping at first failure
 
 ### Merged Upstream
 - None yet
