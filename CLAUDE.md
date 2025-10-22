@@ -123,14 +123,23 @@ This file (`CLAUDE.md`) should **NOT** be submitted to upstream:
 
 ## Current Improvements
 
-### Planned/In Progress
-- [ ] Fix fail-fast behavior (report all validation errors)
-- [ ] Add exit code options (--fail-fast flag for old behavior)
-- [ ] Improve error output formatting
-- [ ] Add summary statistics (X files validated, Y errors found)
+### Completed
+- [x] **Fix fail-fast behavior** - Now validates ALL files and reports ALL errors
+  - Previous: Stopped at first validation error
+  - Now: Validates all files, collects all errors, shows summary
+  - Added summary statistics (Total/Passed/Failed counts)
+  - Exit code 1 if any failures, 0 if all pass
+  - Verbose mode shows detailed error list
+  - Quiet mode shows errors as they occur + summary
+  - Fully tested with TDD (red-green-refactor)
+
+### Planned/Future
+- [ ] Add --fail-fast flag to restore old behavior (optional)
+- [ ] Improve error output formatting (colors, better alignment)
+- [ ] Add JSON output mode for CI integration
 
 ### Submitted to Upstream
-- None yet
+- None yet (improvement ready for submission)
 
 ### Merged Upstream
 - None yet
